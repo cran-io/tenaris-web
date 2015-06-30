@@ -72,6 +72,30 @@ table {
   animation: slideInRight 0.5s both ease-in-out;
 }
 
+@-moz-keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@-o-keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
 @keyframes slideInRight {
   from {
     transform: translateX(100%);
@@ -80,36 +104,24 @@ table {
     transform: translateX(0);
   }
 }
-@-moz-keyframes slideInRight {
-  from {
-    -moz-transform: translateX(100%);
-  }
-  to {
-    -moz-transform: translateX(0);
-  }
-}
-@-webkit-keyframes slideInRight {
-  from {
-    -webkit-transform: translateX(100%);
-  }
-  to {
-    -webkit-transform: translateX(0);
-  }
-}
-/* slide in from the bottom */
-@keyframes slideOutLeft {
+@-moz-keyframes slideOutLeft {
   to {
     transform: translateX(-100%);
   }
 }
-@-moz-keyframes slideOutLeft {
-  to {
-    -moz-transform: translateX(-100%);
-  }
-}
 @-webkit-keyframes slideOutLeft {
   to {
-    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+@-o-keyframes slideOutLeft {
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes slideOutLeft {
+  to {
+    transform: translateX(-100%);
   }
 }
 .page-main {
