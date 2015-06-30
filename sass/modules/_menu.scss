@@ -1,0 +1,33 @@
+.menu {
+	position: fixed;
+	z-index: 11;
+	height: 100%;
+	width: 68px;
+	right: 0;
+	top: 0;
+	background: $dark-menu-color;
+	color: white;
+
+	&.opened {
+		width: 225px;
+	}
+
+	.open {
+		display: block;
+		color: white;
+		font-size:32px;
+		position: absolute;
+		top: 15px;
+		right: 18px;
+		text-decoration: none;
+	}
+
+	.close {
+		color: white;
+		font-size:36px;
+		position: absolute;
+		top: 15px;
+		right: 15px;
+		text-decoration: none;
+	}
+}

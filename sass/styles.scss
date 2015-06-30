@@ -2,8 +2,12 @@
 
 @import 'mixins';
 @import 'fonts';
+@import 'variables';
 
 @import 'base/reset';
 @import 'base/general';
+
+@import 'modules/header';
+@import 'modules/menu';
 
 @import 'sections/main';
