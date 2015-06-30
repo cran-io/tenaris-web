@@ -1,5 +1,8 @@
 @import 'compass/CSS3';
 
-@import 'base/reset';
-
 @import 'mixins';
+
+@import 'base/reset';
+@import 'base/general';
+
+@import 'sections/main';

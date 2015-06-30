@@ -6,13 +6,17 @@
 	<title>Tenaris</title>
 	<link rel="shortcut icon" href="images/favicon.ico">
 	<link rel="stylesheet" href="css/styles.css">
+	
 </head>
 <body>
-	<div ng-view></div>
-	<script src="node_modules/angular/angular.min.js"></script>
-	<script src="components/angular/ngRoute/route.js"></script>
+	<div class="page {{ pageClass }}" ng-view></div>
+
+	<script src="components/angular/angular.js"></script>
+	<script src="components/angular/angular-route.js"></script>
+	<script src="components/angular/angular-animate.js"></script>
 
 	<script src="script/app.js"></script>
-	<script src="script/controllers/inicioController.js"></script>
+	<script src="script/controllers/mainController.js"></script>
+	<script src="script/controllers/providerController.js"></script>
 </body>
 </html>

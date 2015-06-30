@@ -50,3 +50,68 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+.page {
+  bottom: 0;
+  padding-top: 200px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+.page.ng-leave {
+  z-index: 10;
+  -webkit-animation: slideOutLeft 0.5s both ease-in-out;
+  -moz-animation: slideOutLeft 0.5s both ease-in-out;
+  animation: slideOutLeft 0.5s both ease-in-out;
+}
+.page.ng-enter {
+  z-index: 11;
+  -webkit-animation: slideInRight 0.5s both ease-in-out;
+  -moz-animation: slideInRight 0.5s both ease-in-out;
+  animation: slideInRight 0.5s both ease-in-out;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@-moz-keyframes slideInRight {
+  from {
+    -moz-transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(0);
+  }
+}
+@-webkit-keyframes slideInRight {
+  from {
+    -webkit-transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+  }
+}
+/* slide in from the bottom */
+@keyframes slideOutLeft {
+  to {
+    transform: translateX(-100%);
+  }
+}
+@-moz-keyframes slideOutLeft {
+  to {
+    -moz-transform: translateX(-100%);
+  }
+}
+@-webkit-keyframes slideOutLeft {
+  to {
+    -webkit-transform: translateX(-100%);
+  }
+}
+.page-main {
+  background: red;
+}
