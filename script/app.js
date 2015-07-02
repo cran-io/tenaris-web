@@ -10,6 +10,11 @@ var app = angular.module('tenarisApp',['ngRoute', 'ngAnimate', 'tenarisApp.contr
 	    .when('/provider',{
 	      templateUrl: 'partials/provider.html',
 	      controller: 'ProviderController'
-	    }).otherwise({ redirectTo: '/main' });
+	    })
+	    .when('/choiceVideo',{
+	      templateUrl: 'partials/choiceVideo.html',
+	      controller: 'choiceVideoController'
+	    })
+	    .otherwise({ redirectTo: '/main' });
 	}
 ]);

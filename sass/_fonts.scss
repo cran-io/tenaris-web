@@ -41,6 +41,12 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow-left:before {
+	content: "\e606";
+}
+.icon-arrow-right:before {
+	content: "\e607";
+}
 .icon-palette:before {
 	content: "\e603";
 }

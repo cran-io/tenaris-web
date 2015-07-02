@@ -14,10 +14,30 @@
 		<span class="app-title">Audiovisual Production</span>
 	</div>
 	<div class="menu">
-		<a class="open" href="#"><span class="icon icon-hamburger"></span></a>
+		<span class="icon icon-hamburger menu-open"></span>
+		<span class="icon icon-cross menu-close"></span>
+		<div class="menu-site">
+			<h2>Menú</h2>
+			<ul class="menu-head-list">
+				<li><a href="#main"><span class="icon icon-bulb"></span> Ideas</a></li>
+				<li><a href="#provider"><span class="icon icon-provider"></span> Provider</a></li>
+				<li><a href="#choiceVideo"><span class="icon icon-check"></span> Video Adecuado</a></li>
+			</ul>
+			<ul class="menu-foot-list">
+				<li><a href="#"><span class="icon icon-tenaris"></span> Logo Use</a></li>
+				<li><a href="#"><span class="icon icon-palette"></span> Color Palette</a></li>
+				<li><a class="download" href="#"><span class="icon icon-open"></span> Opening Tenaris</a></li>
+			</ul>
+		</div>
+
+
 	</div>
 	<div class="page {{ pageClass }}" ng-view></div>
+	
+	<!-- JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
+	<!-- Angular -->
 	<script src="components/angular/angular.js"></script>
 	<script src="components/angular/angular-route.js"></script>
 	<script src="components/angular/angular-animate.js"></script>
@@ -25,5 +45,10 @@
 	<script src="script/app.js"></script>
 	<script src="script/controllers/mainController.js"></script>
 	<script src="script/controllers/providerController.js"></script>
+	<script src="script/controllers/choiceVideoController.js"></script>
+	
+	<!-- Components -->
+	<script src="components/tenaris/menu.js"></script>
+	<script src="components/tenaris/sections.js"></script>
 </body>
 </html>
