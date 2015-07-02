@@ -1,0 +1,17 @@
+.provider {
+
+	.section {
+		&:nth-child(2n-1){
+			background: $provider-color;
+		}
+
+		&:nth-child(2n){
+			color: $provider-color;
+		}
+	}
+	
+	&.ng-enter {
+		z-index:1;
+		@include animation(slideInLeft $animate-page-time both);
+	}
+}
