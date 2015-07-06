@@ -4,6 +4,7 @@ $(function(){
 		$('.menu-close').fadeIn();
 		$('.menu-site').fadeIn();
 		$('.menu').addClass('opened');
+		$('.menu-marker').fadeOut();
 	});
 
 	$('.menu-close, .menu a').click( function() {
@@ -11,5 +12,6 @@ $(function(){
 		$('.menu-open').fadeIn();
 		$('.menu').removeClass('opened');
 		$('.menu-site').fadeOut();
+		$('.menu-marker').fadeIn();
 	});
 });
