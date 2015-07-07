@@ -557,6 +557,64 @@ h1 {
   padding: 20px;
 }
 
+.menu-marker {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.menu-marker .marker-list .marker-items {
+  position: relative;
+  z-index: 12;
+  margin: 30px auto 0;
+  height: 10px;
+  width: 10px;
+  border: 1px solid white;
+  background: #222;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.menu-marker .marker-list .marker-items:first-child {
+  margin-top: 0;
+}
+.menu-marker .marker-list .marker-items:hover:before, .menu-marker .marker-list .marker-items.selected:before {
+  position: absolute;
+  display: block;
+  content: "";
+  background: white;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 13;
+}
+.menu-marker .marker-line {
+  position: absolute;
+  margin-left: -1px;
+  left: 50%;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background: white;
+  z-index: 11;
+}
+
 .main .section:nth-child(2n-1) {
   background: #ed6d3f;
 }
