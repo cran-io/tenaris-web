@@ -1,4 +1,9 @@
 $(function(){
+	
+	
+
+	// Open Menu
+
 	$('.menu-open').click( function() {
 		$(this).fadeOut();
 		$('.menu-close').fadeIn();

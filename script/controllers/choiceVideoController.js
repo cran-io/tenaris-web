@@ -1,3 +1,5 @@
-app.controller('choiceVideoController', function($scope){
+app.controller('choiceVideoController', function(menuFactory, $scope){
 	$scope.pageClass = 'choice-video';
+	menuFactory.removeIt();
+	menuFactory.makeIt();
 });
