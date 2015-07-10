@@ -30,6 +30,30 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-campaing:before {
+  content: "\e608";
+}
+
+.icon-event:before {
+  content: "\e609";
+}
+
+.icon-news:before {
+  content: "\e60a";
+}
+
+.icon-smartphone:before {
+  content: "\e60b";
+}
+
+.icon-streaming:before {
+  content: "\e60c";
+}
+
+.icon-sure:before {
+  content: "\e60d";
+}
+
 .icon-arrow-left:before {
   content: "\e606";
 }
@@ -132,7 +156,7 @@ html, body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
-  color: #444;
+  color: #222;
 }
 
 .page {
@@ -148,9 +172,35 @@ html, body {
   top: 0;
   height: 100vh;
   background: #f9f9f9;
+  overflow: hidden;
+}
+.page .section p {
+  margin-bottom: 35px;
 }
 .page .section:nth-child(2n-1) {
   color: white;
+}
+.page .section:nth-child(2n-1) .select-two-choices a {
+  background: #222;
+  opacity: .4;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+.page .section:nth-child(2n-1) .select-two-choices a:hover {
+  opacity: .2;
+}
+.page .section:nth-child(2n) {
+  color: #222;
+}
+.page .section:nth-child(2n) .select-two-choices a {
+  background: #222;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+.page .section:nth-child(2n) .select-two-choices a:hover {
+  opacity: .8;
 }
 .page .section .section-content-center {
   text-align: center;
@@ -624,12 +674,6 @@ h1 {
 .main .section:nth-child(2n-1) {
   background: #ed6d3f;
 }
-.main .section:nth-child(2n) {
-  color: #ed6d3f;
-}
-.main .section:nth-child(2n) .select-two-choices a {
-  background: #ed6d3f;
-}
 .main.ng-enter {
   z-index: 1;
   -moz-animation: fadeIn 0.5s ease-in-out both;
@@ -639,10 +683,7 @@ h1 {
 }
 
 .provider .section:nth-child(2n-1) {
-  background: #4198f1;
-}
-.provider .section:nth-child(2n) {
-  color: #4198f1;
+  background: #3a9bdd;
 }
 .provider.ng-enter {
   z-index: 1;
@@ -653,12 +694,75 @@ h1 {
 }
 
 .choice-video .section:nth-child(2n-1) {
-  background: #f141b1;
-}
-.choice-video .section:nth-child(2n) {
-  color: #f141b1;
+  background: #e03f3f;
 }
 .choice-video.ng-enter {
+  z-index: 1;
+  -moz-animation: slideInRight 0.5s ease-in-out both;
+  -webkit-animation: slideInRight 0.5s ease-in-out both;
+  -o-animation: slideInRight 0.5s ease-in-out both;
+  animation: slideInRight 0.5s ease-in-out both;
+}
+
+.news .section:nth-child(2n-1) {
+  background: #9f42ad;
+}
+.news.ng-enter {
+  z-index: 1;
+  -moz-animation: slideInLeft 0.5s ease-in-out both;
+  -webkit-animation: slideInLeft 0.5s ease-in-out both;
+  -o-animation: slideInLeft 0.5s ease-in-out both;
+  animation: slideInLeft 0.5s ease-in-out both;
+}
+
+.event .section:nth-child(2n-1) {
+  background: #9f42ad;
+}
+.event.ng-enter {
+  z-index: 1;
+  -moz-animation: slideInRight 0.5s ease-in-out both;
+  -webkit-animation: slideInRight 0.5s ease-in-out both;
+  -o-animation: slideInRight 0.5s ease-in-out both;
+  animation: slideInRight 0.5s ease-in-out both;
+}
+
+.campaign .section:nth-child(2n-1) {
+  background: #9f42ad;
+}
+.campaign.ng-enter {
+  z-index: 1;
+  -moz-animation: slideInLeft 0.5s ease-in-out both;
+  -webkit-animation: slideInLeft 0.5s ease-in-out both;
+  -o-animation: slideInLeft 0.5s ease-in-out both;
+  animation: slideInLeft 0.5s ease-in-out both;
+}
+
+.smartphone .section:nth-child(2n-1) {
+  background: #dd43b5;
+}
+.smartphone.ng-enter {
+  z-index: 1;
+  -moz-animation: slideInRight 0.5s ease-in-out both;
+  -webkit-animation: slideInRight 0.5s ease-in-out both;
+  -o-animation: slideInRight 0.5s ease-in-out both;
+  animation: slideInRight 0.5s ease-in-out both;
+}
+
+.sure .section:nth-child(2n-1) {
+  background: #d6c43e;
+}
+.sure.ng-enter {
+  z-index: 1;
+  -moz-animation: slideInLeft 0.5s ease-in-out both;
+  -webkit-animation: slideInLeft 0.5s ease-in-out both;
+  -o-animation: slideInLeft 0.5s ease-in-out both;
+  animation: slideInLeft 0.5s ease-in-out both;
+}
+
+.streaming .section:nth-child(2n-1) {
+  background: #9f42ad;
+}
+.streaming.ng-enter {
   z-index: 1;
   -moz-animation: slideInRight 0.5s ease-in-out both;
   -webkit-animation: slideInRight 0.5s ease-in-out both;

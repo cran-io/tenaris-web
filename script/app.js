@@ -16,6 +16,30 @@ var app = angular.module('tenarisApp',['ngRoute', 'ngAnimate', 'tenarisApp.contr
 	      templateUrl: 'partials/choiceVideo.html',
 	      controller: 'choiceVideoController'
 	    })
+	    .when('/event',{
+	      templateUrl: 'partials/event.html',
+	      controller: 'eventController'
+	    })
+	    .when('/campaign',{
+	      templateUrl: 'partials/campaign.html',
+	      controller: 'campaignController'
+	    })
+	    .when('/news',{
+	      templateUrl: 'partials/news.html',
+	      controller: 'newsController'
+	    })
+	    .when('/smartphone',{
+	      templateUrl: 'partials/smartphone.html',
+	      controller: 'smartphoneController'
+	    })
+	    .when('/streaming',{
+	      templateUrl: 'partials/streaming.html',
+	      controller: 'streamingController'
+	    })
+	    .when('/sure',{
+	      templateUrl: 'partials/sure.html',
+	      controller: 'sureController'
+	    })
 	    .otherwise({ redirectTo: '/main' });
 	}
 ]);

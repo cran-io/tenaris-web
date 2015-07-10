@@ -26,7 +26,8 @@ angular.module('tenarisApp.factories').factory('menuFactory', function(){
 
 					var currentId = 0;
 					var id = 0;
-					$(document).on('click', '.goto', function(){
+					$(document).on('click', '.goto', function(evento){
+						
 						id = $(this).data('name');
 						if(currentId!=id){
 							$('.page').animate({
@@ -38,6 +39,18 @@ angular.module('tenarisApp.factories').factory('menuFactory', function(){
 						}
 					});
 			},300);
+		},
+
+		anchor: function() {
+			id = $(this).data('name');
+			if(currentId!=id){
+				$('.page').animate({
+					scrollTop: $('body').innerHeight()*id
+				}, 600);
+				$('.marker-items').removeClass('selected');
+				$('.marker-items.item-'+id).addClass('selected')
+				currentId = id;
+			}
 		}
 	}
 });

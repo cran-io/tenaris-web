@@ -5,17 +5,6 @@
 		&:nth-child(2n-1){
 			background: $ideas-color;
 		}
-
-		&:nth-child(2n){
-			color: $ideas-color;
-
-			.select-two-choices {
-
-				a {
-					background: $ideas-color;
-				}
-			}
-		}
 	}
 
 	&.ng-enter {

@@ -19,9 +19,43 @@ html, body {
 		top: 0;
 		height: 100vh;
 		background: $light-bg-page;
+		overflow: hidden;
+
+		p {
+			margin-bottom: 35px;
+		}
 
 		&:nth-child(2n-1){
 			color: white;
+
+			.select-two-choices {
+
+				a {
+					background: $font-color;
+					opacity: .4;
+					@include transition(opacity .3s ease-in-out);
+
+					&:hover {
+						opacity: .2;
+					}
+				}
+			}
+		}
+
+		&:nth-child(2n){
+			color: $font-color;
+
+			.select-two-choices {
+
+				a {
+					background: $font-color;
+					@include transition(opacity .3s ease-in-out);
+
+					&:hover {
+						opacity: .8;
+					}
+				}
+			}
 		}
 		
 		.section-content-center {
