@@ -1,15 +1,18 @@
-$font-color: #444;
+// General
+$font-color: #222;
+$animate-time: .3s ease-in-out;
+$animate-page-time: .5s ease-in-out;
 
-$light-bg-page: #f9f9f9;
-
+// Menu
 $dark-menu-color: #222;
 $light-menu-color: #333;
 $highlight-menu-color: #7fbc1e;
 
+// Pages color
+$light-bg-page: #f9f9f9;
 $ideas-color: #ed6d3f;
-$provider-color: #4198f1;
-$choice-video-color: #f141b1;
-
-$animate-time: .3s ease-in-out;
-$animate-page-time: .5s ease-in-out;
-
+$provider-color: #3a9bdd;
+$choice-video-color: #e03f3f;
+$sure-color: #d6c43e;
+$smartphone-color: #dd43b5;
+$type-videos-color: #9f42ad;

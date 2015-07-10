@@ -1,7 +1,4 @@
 $(function(){
-	
-	
-
 	// Open Menu
 
 	$('.menu-open').click( function() {

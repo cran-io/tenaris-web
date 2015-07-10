@@ -41,6 +41,24 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-campaing:before {
+	content: "\e608";
+}
+.icon-event:before {
+	content: "\e609";
+}
+.icon-news:before {
+	content: "\e60a";
+}
+.icon-smartphone:before {
+	content: "\e60b";
+}
+.icon-streaming:before {
+	content: "\e60c";
+}
+.icon-sure:before {
+	content: "\e60d";
+}
 .icon-arrow-left:before {
 	content: "\e606";
 }

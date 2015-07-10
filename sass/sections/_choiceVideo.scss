@@ -5,10 +5,6 @@
 		&:nth-child(2n-1){
 			background: $choice-video-color;
 		}
-
-		&:nth-child(2n){
-			color: $choice-video-color;
-		}
 	}
 
 	&.ng-enter {
