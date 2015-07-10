@@ -8,6 +8,6 @@
 	
 	&.ng-enter {
 		z-index:1;
-		@include animation(slideInLeft $animate-page-time both);
+		@include animation(slideInRight $animate-page-time both);
 	}
 }

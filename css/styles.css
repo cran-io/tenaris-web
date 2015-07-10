@@ -720,10 +720,10 @@ h1 {
 }
 .event.ng-enter {
   z-index: 1;
-  -moz-animation: slideInLeft 0.5s ease-in-out both;
-  -webkit-animation: slideInLeft 0.5s ease-in-out both;
-  -o-animation: slideInLeft 0.5s ease-in-out both;
-  animation: slideInLeft 0.5s ease-in-out both;
+  -moz-animation: slideInRight 0.5s ease-in-out both;
+  -webkit-animation: slideInRight 0.5s ease-in-out both;
+  -o-animation: slideInRight 0.5s ease-in-out both;
+  animation: slideInRight 0.5s ease-in-out both;
 }
 
 .campaign .section:nth-child(2n-1) {
@@ -742,10 +742,10 @@ h1 {
 }
 .smartphone.ng-enter {
   z-index: 1;
-  -moz-animation: slideInLeft 0.5s ease-in-out both;
-  -webkit-animation: slideInLeft 0.5s ease-in-out both;
-  -o-animation: slideInLeft 0.5s ease-in-out both;
-  animation: slideInLeft 0.5s ease-in-out both;
+  -moz-animation: slideInRight 0.5s ease-in-out both;
+  -webkit-animation: slideInRight 0.5s ease-in-out both;
+  -o-animation: slideInRight 0.5s ease-in-out both;
+  animation: slideInRight 0.5s ease-in-out both;
 }
 
 .sure .section:nth-child(2n-1) {
@@ -764,8 +764,8 @@ h1 {
 }
 .streaming.ng-enter {
   z-index: 1;
-  -moz-animation: slideInLeft 0.5s ease-in-out both;
-  -webkit-animation: slideInLeft 0.5s ease-in-out both;
-  -o-animation: slideInLeft 0.5s ease-in-out both;
-  animation: slideInLeft 0.5s ease-in-out both;
+  -moz-animation: slideInRight 0.5s ease-in-out both;
+  -webkit-animation: slideInRight 0.5s ease-in-out both;
+  -o-animation: slideInRight 0.5s ease-in-out both;
+  animation: slideInRight 0.5s ease-in-out both;
 }
