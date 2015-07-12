@@ -31,7 +31,43 @@
 }
 
 .icon-campaing:before {
+  content: "\e610";
+}
+
+.icon-page-campaign:before {
   content: "\e608";
+}
+
+.icon-page-idea:before {
+  content: "\e60e";
+}
+
+.icon-page-event:before {
+  content: "\e60f";
+}
+
+.icon-page-notice:before {
+  content: "\e611";
+}
+
+.icon-page-provider:before {
+  content: "\e612";
+}
+
+.icon-page-smartphone:before {
+  content: "\e613";
+}
+
+.icon-page-streaming:before {
+  content: "\e614";
+}
+
+.icon-page-sure:before {
+  content: "\e615";
+}
+
+.icon-page-video:before {
+  content: "\e616";
 }
 
 .icon-event:before {
@@ -169,6 +205,7 @@ html, body {
 }
 .page .section {
   position: relative;
+  padding: 0 70px 0 0;
   top: 0;
   height: 100vh;
   background: #f9f9f9;
@@ -193,6 +230,9 @@ html, body {
 .page .section:nth-child(2n) {
   color: #222;
 }
+.page .section:nth-child(2n) .icon-page {
+  color: #222;
+}
 .page .section:nth-child(2n) .select-two-choices a {
   background: #222;
   -moz-transition: opacity 0.3s ease-in-out;
@@ -202,16 +242,19 @@ html, body {
 .page .section:nth-child(2n) .select-two-choices a:hover {
   opacity: .8;
 }
-.page .section .section-content-center {
-  text-align: center;
+.page .section .section-content {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   transform: translateY(-50%);
+  padding: 0 15px;
+  text-align: center;
+}
+.page .section .content-text {
   margin: 0 auto;
-  width: 70%;
-  max-width: 590px;
+  width: 590px;
+  text-align: center;
 }
 .page.ng-leave {
   z-index: 0;
@@ -232,7 +275,12 @@ h1 {
 }
 
 .icon {
-  color: #fff;
+  color: white;
+}
+
+.icon-page {
+  font-size: 300px;
+  color: white;
 }
 
 .next-section {
@@ -250,6 +298,9 @@ h1 {
   transform: translateX(-50%);
 }
 
+.select-two-choices {
+  overflow: hidden;
+}
 .select-two-choices a {
   position: relative;
   display: block;
@@ -649,8 +700,8 @@ h1 {
   border-radius: 50%;
   top: 50%;
   left: 50%;
-  width: 5px;
-  height: 5px;
+  width: 4px;
+  height: 4px;
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
