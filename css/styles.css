@@ -253,7 +253,7 @@ html, body {
 }
 .page .section .content-text {
   margin: 0 auto;
-  width: 590px;
+  max-width: 590px;
   text-align: center;
 }
 .page.ng-leave {
@@ -337,6 +337,43 @@ h1 {
   transform: translateY(-50%);
   position: absolute;
   right: 10px;
+}
+
+.example-images {
+  margin: 0 auto;
+  text-align: center;
+}
+.example-images img {
+  display: inline-block;
+  margin: 0 5px;
+  max-height: 400px;
+  max-width: 40%;
+}
+
+.content-menu {
+  margin: 0 auto;
+  text-align: center;
+}
+.content-menu ul li {
+  display: inline-block;
+  padding: 15px 15px 0;
+}
+.content-menu ul li a {
+  display: block;
+  color: #222;
+  opacity: .6;
+  font-size: 14px;
+  text-decoration: none;
+  -moz-transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.content-menu ul li a:hover {
+  color: white;
+  opacity: 1;
+}
+.content-menu ul li a span {
+  font-size: 130px;
 }
 
 @-moz-keyframes slideInRight {
