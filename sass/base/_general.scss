@@ -16,6 +16,7 @@ html, body {
 
 	.section {
 		position: relative;
+		padding: 0 70px 0 0;
 		top: 0;
 		height: 100vh;
 		background: $light-bg-page;
@@ -45,6 +46,10 @@ html, body {
 		&:nth-child(2n){
 			color: $font-color;
 
+			.icon-page {
+				color: $font-color;
+			}
+
 			.select-two-choices {
 
 				a {
@@ -58,12 +63,16 @@ html, body {
 			}
 		}
 		
-		.section-content-center {
-			text-align: center;
+		.section-content {
 			@include vertical-align;
+			padding: 0 15px;
+			text-align: center;
+		}
+
+		.content-text {
 			margin: 0 auto;
-			width: 70%;
 			max-width: 590px;
+			text-align: center;
 		}
 	}
 
@@ -85,7 +94,12 @@ h1 {
 }
 
 .icon {
-	color: #fff;
+	color: white;
+}
+
+.icon-page {
+	font-size: 300px;
+	color: white;
 }
 
 .next-section {
@@ -98,6 +112,7 @@ h1 {
 }
 
 .select-two-choices {
+	overflow: hidden;
 
 	a {
 		position: relative;
@@ -138,6 +153,48 @@ h1 {
 			right: 10px;
 		}
 	}
+}
+
+.example-images {
+	margin: 0 auto;
+	text-align: center;
+
+	img {
+		display: inline-block;
+		margin: 0 5px;
+		max-height: 400px;
+		max-width: 40%;
+	}
+}
+
+.content-menu {
+	margin: 0 auto;
+	text-align: center;
+
+	ul {
+		
+		li {
+			display: inline-block;
+			padding:15px 15px 0;
+
+			a {
+				display: block;
+				color: $font-color;
+				opacity: .6;
+				font-size: 14px;
+				text-decoration: none;
+				@include transition(color .3s ease-in-out, opacity .3s ease-in-out);
+				&:hover {
+					color: white;
+					opacity: 1;
+				}
+
+				span {
+					font-size: 130px;
+				}
+			}
+		}
+	} 
 }
 
 @include keyframes (slideInRight) {
