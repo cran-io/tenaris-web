@@ -251,11 +251,6 @@ html, body {
   padding: 0 15px;
   text-align: center;
 }
-.page .section .content-text {
-  margin: 0 auto;
-  max-width: 590px;
-  text-align: center;
-}
 .page.ng-leave {
   z-index: 0;
   -moz-animation: fadeOut 0.2s ease-in-out both;
@@ -271,7 +266,7 @@ h1 {
   font: normal 60px/1em 'tenaris-uc';
   text-transform: uppercase;
   text-rendering: geometricPrecision;
-  margin: 35px 0 25px;
+  margin: 25px 0;
 }
 
 .icon {
@@ -279,7 +274,7 @@ h1 {
 }
 
 .icon-page {
-  font-size: 300px;
+  font-size: 280px;
   color: white;
 }
 
@@ -350,6 +345,12 @@ h1 {
   max-width: 40%;
 }
 
+.content-text {
+  margin: 0 auto;
+  max-width: 590px;
+  text-align: center;
+}
+
 .content-menu {
   margin: 0 auto;
   text-align: center;
@@ -374,6 +375,12 @@ h1 {
 }
 .content-menu ul li a span {
   font-size: 130px;
+}
+
+video {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 800px;
 }
 
 @-moz-keyframes slideInRight {
