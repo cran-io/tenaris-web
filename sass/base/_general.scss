@@ -201,6 +201,10 @@ video {
 	margin: 0 auto;
 	width: 90%;
 	max-width: 800px;
+
+	&::-webkit-media-controls-fullscreen-button {
+    	display: none;
+	}
 }
 
 @include keyframes (slideInRight) {

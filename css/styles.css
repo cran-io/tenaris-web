@@ -382,6 +382,9 @@ video {
   width: 90%;
   max-width: 800px;
 }
+video::-webkit-media-controls-fullscreen-button {
+  display: none;
+}
 
 @-moz-keyframes slideInRight {
   from {
@@ -767,7 +770,7 @@ video {
 }
 
 .main .section:nth-child(2n-1) {
-  background: #ed6d3f;
+  background: #ff9900;
 }
 .main.ng-enter {
   z-index: 1;
@@ -778,7 +781,7 @@ video {
 }
 
 .provider .section:nth-child(2n-1) {
-  background: #3a9bdd;
+  background: #0099cc;
 }
 .provider.ng-enter {
   z-index: 1;
@@ -789,7 +792,7 @@ video {
 }
 
 .choice-video .section:nth-child(2n-1) {
-  background: #e03f3f;
+  background: #ff3333;
 }
 .choice-video.ng-enter {
   z-index: 1;
@@ -800,7 +803,7 @@ video {
 }
 
 .news .section:nth-child(2n-1) {
-  background: #9f42ad;
+  background: #663399;
 }
 .news.ng-enter {
   z-index: 1;
@@ -811,7 +814,7 @@ video {
 }
 
 .event .section:nth-child(2n-1) {
-  background: #9f42ad;
+  background: #663399;
 }
 .event.ng-enter {
   z-index: 1;
@@ -822,7 +825,7 @@ video {
 }
 
 .campaign .section:nth-child(2n-1) {
-  background: #9f42ad;
+  background: #663399;
 }
 .campaign.ng-enter {
   z-index: 1;
@@ -833,7 +836,7 @@ video {
 }
 
 .smartphone .section:nth-child(2n-1) {
-  background: #dd43b5;
+  background: #00cccc;
 }
 .smartphone.ng-enter {
   z-index: 1;
@@ -844,7 +847,7 @@ video {
 }
 
 .sure .section:nth-child(2n-1) {
-  background: #d6c43e;
+  background: #99cc00;
 }
 .sure.ng-enter {
   z-index: 1;
@@ -855,7 +858,7 @@ video {
 }
 
 .streaming .section:nth-child(2n-1) {
-  background: #9f42ad;
+  background: #663399;
 }
 .streaming.ng-enter {
   z-index: 1;
