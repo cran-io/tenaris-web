@@ -813,6 +813,129 @@ video::-webkit-media-controls-fullscreen-button {
   animation: slideInLeft 0.5s ease-in-out both;
 }
 
+.logo-use .section,
+.color-pallete .section {
+  background-color: #fff;
+}
+.logo-use .section .section-content,
+.color-pallete .section .section-content {
+  max-height: 566px;
+}
+.logo-use .slider-wrapper,
+.color-pallete .slider-wrapper {
+  width: 910px;
+  margin: 0 auto;
+  min-height: 524px;
+  position: relative;
+}
+.logo-use .slide,
+.color-pallete .slide {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  max-width: 910px;
+  max-height: 524px;
+}
+.logo-use .slide#logouse-2,
+.color-pallete .slide#logouse-2 {
+  position: absolute;
+  left: 200%;
+}
+.logo-use .slide h3,
+.color-pallete .slide h3 {
+  font-size: 24.5px;
+  color: #4ec6ab;
+  font-weight: 300;
+  margin-bottom: 40px;
+  line-height: 26px;
+  text-align: left;
+}
+.logo-use .slide h3 span,
+.color-pallete .slide h3 span {
+  color: #0d7863;
+}
+.logo-use .slide .clearfix:before, .logo-use .slide .clearfix:after,
+.color-pallete .slide .clearfix:before,
+.color-pallete .slide .clearfix:after {
+  content: " ";
+  display: table;
+}
+.logo-use .slide .clearfix:after,
+.color-pallete .slide .clearfix:after {
+  clear: both;
+}
+.logo-use .slide .clearfix .pull-left,
+.color-pallete .slide .clearfix .pull-left {
+  width: 220px;
+  margin-right: 16px;
+  float: left;
+}
+.logo-use .slide .clearfix .pull-left > span.green,
+.color-pallete .slide .clearfix .pull-left > span.green {
+  color: #0d7863;
+  font-weight: bold;
+  text-align: left;
+  display: block;
+}
+.logo-use .slide .clearfix .pull-left p,
+.logo-use .slide .clearfix .pull-left ul li,
+.color-pallete .slide .clearfix .pull-left p,
+.color-pallete .slide .clearfix .pull-left ul li {
+  color: #3d3d3d;
+  text-align: left;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin-bottom: 10px;
+}
+.logo-use .slide .clearfix .pull-left p.download strong,
+.logo-use .slide .clearfix .pull-left ul li.download strong,
+.color-pallete .slide .clearfix .pull-left p.download strong,
+.color-pallete .slide .clearfix .pull-left ul li.download strong {
+  font-weight: bold;
+  display: block;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #f3f3f3;
+  margin-bottom: 10px;
+}
+.logo-use .slide .clearfix .pull-left p.download a,
+.logo-use .slide .clearfix .pull-left ul li.download a,
+.color-pallete .slide .clearfix .pull-left p.download a,
+.color-pallete .slide .clearfix .pull-left ul li.download a {
+  text-decoration: none;
+}
+.logo-use .slide .clearfix .pull-right,
+.color-pallete .slide .clearfix .pull-right {
+  width: 655px;
+  margin-left: 16px;
+  float: left;
+}
+.logo-use .slide hr,
+.color-pallete .slide hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #ffffff;
+}
+.logo-use .slider-controls,
+.color-pallete .slider-controls {
+  margin: 20px 0;
+}
+.logo-use .slider-controls .slider-control,
+.color-pallete .slider-controls .slider-control {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  background: #C5C5C5;
+  color: #0088cc;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+.logo-use .slider-controls .slider-control:hover, .logo-use .slider-controls .slider-control.active,
+.color-pallete .slider-controls .slider-control:hover,
+.color-pallete .slider-controls .slider-control.active {
+  background: #1E579A;
+}
+
 .event .section:nth-child(2n-1) {
   background: #663399;
 }

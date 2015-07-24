@@ -40,6 +40,14 @@ var app = angular.module('tenarisApp',['ngRoute', 'ngAnimate', 'tenarisApp.contr
 	      templateUrl: 'partials/sure.html',
 	      controller: 'sureController'
 	    })
+	    .when('/logoUse',{
+	      templateUrl: 'partials/logoUse.html',
+	      controller: 'logoUseController'
+	    })
+	    .when('/colorPallete',{
+	      templateUrl: 'partials/colorPallete.html',
+	      controller: 'colorPalleteController'
+	    })
 	    .otherwise({ redirectTo: '/main' });
 	}
 ]);
