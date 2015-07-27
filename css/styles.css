@@ -836,11 +836,26 @@ video::-webkit-media-controls-fullscreen-button {
   left: 0;
   max-width: 910px;
   max-height: 524px;
+  -moz-transition: left 0.8s ease;
+  -webkit-transition: left 0.8s ease;
+  transition: left 0.8s ease;
+}
+.logo-use .slide#logouse-1,
+.color-pallete .slide#logouse-1 {
+  left: -200%;
+}
+.logo-use .slide#logouse-1.active,
+.color-pallete .slide#logouse-1.active {
+  left: 0;
 }
 .logo-use .slide#logouse-2,
 .color-pallete .slide#logouse-2 {
   position: absolute;
   left: 200%;
+}
+.logo-use .slide#logouse-2.active,
+.color-pallete .slide#logouse-2.active {
+  left: 0;
 }
 .logo-use .slide h3,
 .color-pallete .slide h3 {

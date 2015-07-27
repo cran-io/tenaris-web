@@ -22,13 +22,25 @@
 		left: 0;
 		max-width: 910px;
 		max-height: 524px;
+		@include transition (left 0.8s ease);
+
 
 		&#logouse-1 {
+			left: -200%;
+
+			&.active {
+				left: 0;
+			}
 		}
+
 
 		&#logouse-2 {
 			position: absolute;
 			left: 200%;
+
+			&.active {
+				left: 0;
+			}
 		}
 
 		h3 {
