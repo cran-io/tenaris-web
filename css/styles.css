@@ -872,6 +872,10 @@ video::-webkit-media-controls-fullscreen-button {
 .color-pallete .slide h3 span {
   color: #0d7863;
 }
+.logo-use .slide .clearfix,
+.color-pallete .slide .clearfix {
+  z-index: 1;
+}
 .logo-use .slide .clearfix:before, .logo-use .slide .clearfix:after,
 .color-pallete .slide .clearfix:before,
 .color-pallete .slide .clearfix:after {
@@ -899,6 +903,8 @@ video::-webkit-media-controls-fullscreen-button {
 .logo-use .slide .clearfix .pull-left ul li,
 .color-pallete .slide .clearfix .pull-left p,
 .color-pallete .slide .clearfix .pull-left ul li {
+  font-size: 12px;
+  line-height: 20px;
   color: #3d3d3d;
   text-align: left;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -936,6 +942,9 @@ video::-webkit-media-controls-fullscreen-button {
 .logo-use .slider-controls,
 .color-pallete .slider-controls {
   margin: 20px 0;
+  margin: 20px 0;
+  z-index: 3;
+  position: relative;
 }
 .logo-use .slider-controls .slider-control,
 .color-pallete .slider-controls .slider-control {
