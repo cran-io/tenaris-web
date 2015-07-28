@@ -213,6 +213,8 @@ html, body {
 }
 .page .section p {
   margin-bottom: 35px;
+  font-size: 20px;
+  line-height: 30px;
 }
 .page .section:nth-child(2n-1) {
   color: white;
@@ -263,10 +265,10 @@ html, body {
 }
 
 h1 {
-  font: normal 60px/1em 'tenaris-uc';
+  font: normal 80px/1em 'tenaris-uc';
   text-transform: uppercase;
   text-rendering: geometricPrecision;
-  margin: 25px 0;
+  margin: 30px 0;
 }
 
 .icon {
