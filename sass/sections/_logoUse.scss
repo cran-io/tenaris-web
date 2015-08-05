@@ -1,5 +1,11 @@
 .logo-use,
 .color-pallete {
+
+	&.ng-enter {
+		z-index:1;
+		@include animation(fadeIn $animate-page-time both);
+	}
+	
 	.section {
 		background-color: #fff;
 
