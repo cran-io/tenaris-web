@@ -201,7 +201,6 @@ html, body {
   text-align: center;
   top: 0;
   width: 100%;
-  overflow-y: hidden;
 }
 .page .section {
   position: relative;
