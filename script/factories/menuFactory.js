@@ -5,22 +5,18 @@ angular.module('tenarisApp.factories').factory('menuFactory', function(){
 			$( ".marker-list" ).empty()
 		},
 		
-		makeIt: function(){
+		makeIt: function($scope){
 			setTimeout(
 				function(){
 					var currentSecction = '.item-0';
+					$('body').animate({
+						scrollTop:0
+					}, 'fast');
+
 					$('.section').each( function(item){
 						seccion = item;
 						$('.marker-list').append('<li class="marker-items goto item-'+seccion+'" data-name="'+seccion+'"></li>');	
 						$(this).addClass('section-'+seccion);
-					});
-
-					$('.marker-items').each(function(){
-							$(this).on('click', function(){
-							$(currentSecction).removeClass('selected');
-							$(this).addClass('selected');
-							currentSecction = $(this);
-						});
 					});
 					$(currentSecction).addClass('selected');
 
@@ -30,11 +26,9 @@ angular.module('tenarisApp.factories').factory('menuFactory', function(){
 						
 						id = $(this).data('name');
 						if(currentId!=id){
-							$('.page').animate({
+							$('body').animate({
 								scrollTop: $('body').innerHeight()*id
-							}, 600);
-							$('.marker-items').removeClass('selected');
-							$('.marker-items.item-'+id).addClass('selected')
+							}, 'slow');
 							currentId = id;
 						}
 					});
@@ -47,8 +41,6 @@ angular.module('tenarisApp.factories').factory('menuFactory', function(){
 				$('.page').animate({
 					scrollTop: $('body').innerHeight()*id
 				}, 600);
-				$('.marker-items').removeClass('selected');
-				$('.marker-items.item-'+id).addClass('selected')
 				currentId = id;
 			}
 		}

@@ -201,7 +201,6 @@ html, body {
   text-align: center;
   top: 0;
   width: 100%;
-  overflow-y: hidden;
 }
 .page .section {
   position: relative;
@@ -213,8 +212,6 @@ html, body {
 }
 .page .section p {
   margin-bottom: 35px;
-  font-size: 20px;
-  line-height: 30px;
 }
 .page .section:nth-child(2n-1) {
   color: white;
@@ -265,10 +262,10 @@ html, body {
 }
 
 h1 {
-  font: normal 80px/1em 'tenaris-uc';
+  font: normal 60px/1em 'tenaris-uc';
   text-transform: uppercase;
   text-rendering: geometricPrecision;
-  margin: 30px 0;
+  margin: 25px 0;
 }
 
 .icon {
@@ -815,6 +812,14 @@ video::-webkit-media-controls-fullscreen-button {
   animation: slideInLeft 0.5s ease-in-out both;
 }
 
+.logo-use.ng-enter,
+.color-pallete.ng-enter {
+  z-index: 1;
+  -moz-animation: fadeIn 0.5s ease-in-out both;
+  -webkit-animation: fadeIn 0.5s ease-in-out both;
+  -o-animation: fadeIn 0.5s ease-in-out both;
+  animation: fadeIn 0.5s ease-in-out both;
+}
 .logo-use .section,
 .color-pallete .section {
   background-color: #fff;
