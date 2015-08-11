@@ -23,10 +23,18 @@ html, body {
 
 		p {
 			margin-bottom: 35px;
+			font-size: 16px;
+			line-height: 1.5em;
 		}
 
 		&:nth-child(2n-1){
 			color: white;
+
+			a {
+				text-decoration: none;
+				color:	white;
+				opacity: .6;
+			}
 
 			.select-two-choices {
 
@@ -45,6 +53,12 @@ html, body {
 		&:nth-child(2n){
 			color: $font-color;
 
+			a {
+				text-decoration: none;
+				color: $font-color;
+				opacity: .6;
+			}
+
 			.icon-page {
 				color: $font-color;
 			}
@@ -53,6 +67,7 @@ html, body {
 
 				a {
 					background: $font-color;
+					color:white;
 					@include transition(opacity .3s ease-in-out);
 
 					&:hover {

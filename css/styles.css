@@ -212,9 +212,16 @@ html, body {
 }
 .page .section p {
   margin-bottom: 35px;
+  font-size: 16px;
+  line-height: 1.5em;
 }
 .page .section:nth-child(2n-1) {
   color: white;
+}
+.page .section:nth-child(2n-1) a {
+  text-decoration: none;
+  color: white;
+  opacity: .6;
 }
 .page .section:nth-child(2n-1) .select-two-choices a {
   background: #222;
@@ -229,11 +236,17 @@ html, body {
 .page .section:nth-child(2n) {
   color: #222;
 }
+.page .section:nth-child(2n) a {
+  text-decoration: none;
+  color: #222;
+  opacity: .6;
+}
 .page .section:nth-child(2n) .icon-page {
   color: #222;
 }
 .page .section:nth-child(2n) .select-two-choices a {
   background: #222;
+  color: white;
   -moz-transition: opacity 0.3s ease-in-out;
   -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
