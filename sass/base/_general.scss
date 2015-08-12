@@ -59,6 +59,11 @@ html, body {
 				opacity: .6;
 			}
 
+			a.highlink {
+				color: $type-videos-color;
+				opacity: 1;
+			}
+
 			.icon-page {
 				color: $font-color;
 			}
