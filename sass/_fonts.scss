@@ -41,6 +41,15 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-editorial-guidlines:before {
+	content: "\e617";
+}
+.icon-social-guidlines:before {
+	content: "\e618";
+}
+.icon-video-guidlines:before {
+	content: "\e619";
+}
 .icon-campaing:before {
 	content: "\e610";
 }
@@ -119,7 +128,6 @@
 .icon-cross:before {
 	content: "\e117";
 }
-
 .icon-file:before {
 	content: "\e124";
 }
