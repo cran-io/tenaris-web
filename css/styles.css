@@ -30,6 +30,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-editorial-guidlines:before {
+  content: "\e617";
+}
+
+.icon-social-guidlines:before {
+  content: "\e618";
+}
+
+.icon-video-guidlines:before {
+  content: "\e619";
+}
+
 .icon-campaing:before {
   content: "\e610";
 }
@@ -132,6 +144,10 @@
 
 .icon-cross:before {
   content: "\e117";
+}
+
+.icon-file:before {
+  content: "\e124";
 }
 
 html, body, div, span, applet, object, iframe,
@@ -240,6 +256,10 @@ html, body {
   text-decoration: none;
   color: #222;
   opacity: .6;
+}
+.page .section:nth-child(2n) a.highlink {
+  color: #663399;
+  opacity: 1;
 }
 .page .section:nth-child(2n) .icon-page {
   color: #222;
@@ -1033,4 +1053,35 @@ video::-webkit-media-controls-fullscreen-button {
   -webkit-animation: slideInRight 0.5s ease-in-out both;
   -o-animation: slideInRight 0.5s ease-in-out both;
   animation: slideInRight 0.5s ease-in-out both;
+}
+
+.landing .section {
+  padding: 0;
+}
+.landing .section:nth-child(2n-1) {
+  background: #f9f9f9;
+}
+.landing .section:nth-child(2n-1) h1 {
+  color: #222;
+}
+.landing .section:nth-child(2n-1) a {
+  opacity: 1;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+.landing .section:nth-child(2n-1) a span {
+  font-size: 200px;
+}
+.landing .section:nth-child(2n-1) a.social-guidlines {
+  color: #0099cc;
+}
+.landing .section:nth-child(2n-1) a.video-guidlines {
+  color: #ff3333;
+}
+.landing .section:nth-child(2n-1) a.editorial-guidlines {
+  color: #663399;
+}
+.landing .section:nth-child(2n-1) a:hover {
+  opacity: .6;
 }

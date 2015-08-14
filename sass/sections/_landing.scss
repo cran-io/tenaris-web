@@ -1,0 +1,39 @@
+.landing {
+
+	.section {
+		padding: 0;
+
+		&:nth-child(2n-1){
+			background: $landing-color;
+
+			h1 {
+				color: $font-color;
+			}
+
+			a {
+				opacity: 1;
+				@include transition(opacity 0.3s ease-in-out);
+
+				span {
+					font-size: 200px;
+				}
+
+				&.social-guidlines {
+					color: $provider-color;
+				}
+
+				&.video-guidlines {
+					color: $choice-video-color;
+				}
+
+				&.editorial-guidlines {
+					color: $type-videos-color;
+				}
+
+				&:hover{
+					opacity: .6;
+				}
+			}
+		}
+	}
+}
