@@ -9,7 +9,7 @@ angular.module('tenarisApp.factories').factory('menuFactory', function(){
 			setTimeout(
 				function(){
 					var currentSecction = '.item-0';
-					$('body').animate({
+					$('body,html').animate({
 						scrollTop:0
 					}, 'fast');
 
@@ -26,7 +26,7 @@ angular.module('tenarisApp.factories').factory('menuFactory', function(){
 						
 						id = $(this).data('name');
 						if(currentId!=id){
-							$('body').animate({
+							$('body,html').animate({
 								scrollTop: $('body').innerHeight()*id
 							}, 'slow');
 							currentId = id;
